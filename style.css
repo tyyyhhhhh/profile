@@ -13,7 +13,6 @@ body {
   margin: 10px auto;
   text-align: center;
   border: 1px solid lightgrey;
-
 }
 
 h1, h3 {
@@ -73,12 +72,37 @@ ul li {
   margin: 0 auto;
 }
 
+/*#video {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;*/
+  /*  margin: 0 auto;
+}*/
+
+#video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+#video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
   .container {
     width: 700px;
   }
+
 }
 
 
@@ -87,6 +111,8 @@ ul li {
   .container {
     width: 500px;
   }
+
+
 }
 
 @media (max-width: 540px) {
@@ -103,6 +129,11 @@ ul li {
   .fab {
     font-size: 30px;
   }
+
+  h1{
+    font-size: 20px;
+  }
+
 }
 
 
